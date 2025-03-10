@@ -12,36 +12,36 @@ document.addEventListener("DOMContentLoaded", function () {
     if (activeLink) activeLink.classList.add("nav__link--active");
   }
 
-  // Use um array de thresholds e ajuste rootMargin para mobile
+  // Configuração do IntersectionObserver
   const observerOptions = {
     root: null,
-    threshold: [0, 0.25, 0.5, 0.75, 1],
-    // Para mobile, "puxe" a área de interseção para cima
-    rootMargin: window.innerWidth < 768 ? "0px 0px -40% 0px" : "0px",
+    threshold: 0.5, // 50% da seção visível
   };
 
   const observer = new IntersectionObserver((entries) => {
+    // Filtra as seções que estão visíveis
     const visibleEntries = entries.filter((entry) => entry.isIntersecting);
     if (visibleEntries.length > 0) {
-      // Seleciona a entrada com maior interseção
-      let bestEntry = visibleEntries.reduce((prev, current) => {
-        return prev.intersectionRatio > current.intersectionRatio
-          ? prev
-          : current;
-      });
-      setActiveLink(bestEntry.target.id);
+      // Ordena as seções visíveis pela posição do topo (aquela mais próxima do topo vem primeiro)
+      visibleEntries.sort(
+        (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
+      );
+      // Atualiza o link ativo para a seção mais próxima do topo
+      setActiveLink(visibleEntries[0].target.id);
     }
   }, observerOptions);
 
+  // Observa cada seção
   sections.forEach((section) => observer.observe(section));
 
-  // Força o primeiro link ativo se o scroll estiver perto do topo
+  // Listener para garantir que, se o usuário estiver no topo (scrollY < 20), o primeiro link seja ativo
   window.addEventListener("scroll", function () {
-    if (window.scrollY < 50) {
+    if (window.scrollY < 20) {
       setActiveLink(sections[0].id);
     }
   });
 
+  // Atualiza o link ativo ao clicar
   navLinks.forEach((link) => {
     link.addEventListener("click", function () {
       removeActiveClasses();

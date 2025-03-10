@@ -12,25 +12,23 @@ Para desenvolver esta atividade será necessário:
   - [x] (!) doctype html5
   - [x] (!) Capriche na diagramação, vai ser avaliado se está agradável visualmente.
   - [/] (!) Responsivo
-    - [/] Mobile First
-    - [ ] MQ: Tablet
-    - [ ] MQ: Laptop
-    - [ ] MQ: Desktop
-    - [ ] MQ: TV
+    - [x] Mobile First
+    - [x] MQ: Tablet
+    - [x] MQ: Laptop
+    - [x] MQ: Desktop
 - [x] CSS.
   - [x] (!) Utilizar somente CSS, não pode utilizar bootstrap ou similares;
   - [x] BEM CSS;
   - [x] Variáveis CSS, para facilitar itens globais;
-- [ ] (!) JavaScript (livre)
-- [ ] (!) Acesso a um provedor de hospedagem gratuito.
-  - [ ] (!) Ao criar o seu usuário no servidor de hospedagem gratuito, utilize seu nome como parte do domínio.
+- [x] (!) JavaScript (livre)
+- [x] (!) Acesso a um provedor de hospedagem gratuito.
+  - [x] (!) Ao criar o seu usuário no servidor de hospedagem gratuito, utilize seu nome como parte do domínio.
 - [x] (!) Um diagramador (IDE VS Code, por exemplo).
 - [x] (!) Menu visível em todas as páginas.
 - [x] (!) Não utilizar o botão VOLTAR do navegador com parte da interação.
 - [x] (!) Conteúdo de uma página só, links com âncora.
 - [x] (!) Tema do site: Portfólio pessoal (CV online).
 - [x] (!) Mínimo quatro links: PORTFOLIO, SOBRE MIM, FORMAÇÃO, CONTATO
-
   - [x] Colocar conteúdo, principalmente nos itens sobre você, formação acadêmica e até experiência profissional se você tiver.
   - [x] SOBRE: que fale sobre você, hobbies etc;
     - [x] Foto
@@ -49,8 +47,7 @@ Para desenvolver esta atividade será necessário:
   - [x] Link para contato – fazer a parte visual do formulário. (utilizar inputs: nome, email, mensagem).
     - [x] Info
     - [x] Formulário
-
-- [ ] (!) Explicar seu código através de comentários, sem exageros;
+- [x] (!) Explicar seu código através de comentários, sem exageros;
 
 ---
 
