@@ -31,12 +31,15 @@ Para desenvolver esta atividade será necessário:
 - [x] (!) Tema do site: Portfólio pessoal (CV online).
 - [x] (!) Mínimo quatro links: PORTFOLIO, SOBRE MIM, FORMAÇÃO, CONTATO
   - [ ] Colocar conteúdo, principalmente nos itens sobre você, formação acadêmica e até experiência profissional se você tiver.
-  - [x] Um link Sobre mim: que fale sobre você, hobbies etc;
+  - [x] SOBRE: que fale sobre você, hobbies etc;
     - [x] Foto
     - [x] Texto tl;dr
     - [x] Texto geral
   - [/] Um link sobre sua formação educacional, idiomas;
-    - [ ] Timeline vertical
+    - [ ] Formações: Timeline vertical
+    - [ ] Idiomas
+    - [ ] Skills
+    - [ ] Links?
   - [x] Um link com seu portfólio. Pode colocar links para outros sites que você tenha feito, ou com trabalhos que você tenha desenvolvido no curso em outras disciplinas. No decorrer da disciplina foram colocados exemplos de sites, você pode refazer esses exemplos e utilizar como portfólio.
     - [x] Grid auto-fit
     - [x] Imagens
@@ -48,28 +51,19 @@ Para desenvolver esta atividade será necessário:
 
 ---
 
-animacao cursor piscando \_ ou |
+## Ideias Gerais
 
-dark light theme
-dados pessoais da faculade...ru..curso..etc..
-sobre mim...quadro antigo renascentista chatgpt...no glitch ele mostra Matrix
-efeitos de ghlitch
-grid portfolio no inicio?7
-baixar cv...link para linedin?
-modal...abrir portfolio
-
-- [x] Estrutura HTML, JS , CSS.
-  - Responsivo
-  - Tamanho máximo do conteúdo....easter egg se aumentar muito
-  - doodles
-  - quando apertado...imagem comprime (eu me apertando...no final vira o hulk amarelo)
-- [ ] Sobre mim
-  - [ ] Terminal prompt + cantos do terminal mac. Borda lateral..?
-  - Imagem no menu lateral?
-  - Olhos andando?
-  - 2 colunas...cad um um terminal...se mobile, um embaixo do outro
-- [ ] Formação
-  - Skills?
-- [ ] Contato
-  - [ ] Formulário
-  - Contato no menu lateral?
+- [ ] Smooth scroll
+- [x] Prompt terminal para iniciar cada seção
+- [ ] Animaçã cursor piscando
+- [ ] Dark / Light theme
+- [ ] Imagem pessoal no aside
+  - [ ] Olhos andando acompanhando o cursor
+  - [ ] Glitch: mostra Matrix ou imagem pixada
+- [ ] Contato no aside
+- [ ] Efeitos de ghlitch
+- [ ] Baixar cv...link para linedIn?
+- [ ] Modal...abrir portfolio
+- [ ] Tamanho máximo do conteúdo....easter egg se aumentar muito
+- [ ] Tamanho mínimo da tela: quando apertado...imagem minha comprime (eu me apertando...no final vira o hulk amarelo)
+- [ ] Doodles
