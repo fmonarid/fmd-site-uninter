@@ -2,8 +2,10 @@
 :root {
   --color-surface: hsl(0, 0%, 100%);
   --color-on-surface: hsla(0, 0%, 10%, 1);
+  --color-on-surface-outline: hsla(0, 0%, 85%, 1);
   --color-surface-inverse: hsla(0, 0%, 10%, 1);
   --color-on-surface-inverse: hsl(0, 0%, 100%);
+  --color-on-surface-outline-inverse: hsla(0, 0%, 20%, 1);
   --color-on-surface-primary: hsla(56, 100%, 56%, 1);
   --color-on-surface-primary-transparent: hsla(56, 100%, 56%, 0.7);
   --color-on-surface-secondary: hsla(130, 100%, 50%, 1);
@@ -11,6 +13,7 @@
   --color-on-surface-tertiary: hsla(270, 100%, 50%, 1);
   --color-on-surface-tertiary-transparent: hsla(270, 100%, 50%, 0.7);
 
+  --u-font-family-mono: "Roboto Mono", monospace;
   --u-spacer-sm: 2rem;
   --u-spacer-md: 6rem;
   --u-spacer-lg: 12rem;
@@ -19,7 +22,7 @@
   --u-shadow: 0 0.2rem 0.2rem hsla(0, 0%, 0%, 0.2);
 }
 
-/* Reset e estrutura básica inicial */
+/* Reset e estrutura básica universal */
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +50,7 @@ body {
   width: 100%;
   height: 100%;
   font-size: 1.6rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--u-font-family-mono);
   color: var(--color-on-surface);
   background-color: var(--color-surface);
   background-image: radial-gradient(
@@ -82,6 +85,12 @@ section {
 ul {
   margin-left: 2rem;
   list-style-type: circle;
+  font-weight: normal;
+}
+
+ul span {
+  font-weight: 500;
+  margin-right: 0.4rem;
 }
 
 /* Classes universais */
@@ -97,7 +106,7 @@ ul {
   color: var(--color-on-surface-inverse);
   padding: 2rem 1rem 1rem;
   border-radius: var(--u-corner);
-  font-family: "Roboto Mono", monospace;
+  font-family: var(--u-font-family-mono);
   font-size: 1.4rem;
   position: relative;
   grid-column: 1/-1;
@@ -291,19 +300,65 @@ ul {
 .about ul {
   text-transform: lowercase;
 }
-.about ul span {
-  font-weight: 500;
-  margin-right: 0.4rem;
-}
 
 .education ul li {
   margin-bottom: 1rem;
 }
 .education ul li span {
   display: block;
-  font-weight: 500;
 }
 .education ul li span:nth-child(2) {
   font-size: 1.4rem;
   font-weight: normal;
+}
+
+.contact__info {
+  text-transform: lowercase;
+  margin: var(--u-spacer-sm);
+}
+.contact__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  gap: var(--u-spacer-sm);
+  margin-bottom: 10rem;
+}
+
+.contact__form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid var(--color-on-surface-outline);
+  border-radius: var(--u-corner);
+  font-family: var(--u-font-family-mono);
+  font-size: 1.6rem;
+}
+.contact__form textarea {
+  height: 20rem;
+  resize: vertical;
+}
+.contact__form button {
+  width: fit-content;
+  align-self: flex-end;
+  background-color: var(--color-on-surface-primary);
+  color: var(--color-on-surface);
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: var(--u-corner);
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: var(--u-font-family-mono);
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.contact__form button:hover {
+  background-color: var(--color-on-surface-secondary);
 }
