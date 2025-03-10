@@ -48,7 +48,7 @@ Para desenvolver esta atividade será necessário:
     - [x] Efeito pb, colorido no hover
   - [x] Link para contato – fazer a parte visual do formulário. (utilizar inputs: nome, email, mensagem).
     - [x] Info
-    - [ ] Formulário
+    - [x] Formulário
 
 - [ ] (!) Explicar seu código através de comentários, sem exageros;
 
@@ -56,7 +56,7 @@ Para desenvolver esta atividade será necessário:
 
 ## Ideias Gerais
 
-- [ ] Smooth scroll
+- [x] Smooth scroll
 - [x] Prompt terminal para iniciar cada seção
 - [ ] Animaçã cursor piscando
 - [ ] Dark / Light theme

@@ -60,6 +60,7 @@ body {
   );
   background-size: 20px 20px;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 a,
@@ -367,7 +368,7 @@ button:hover {
   align-self: flex-end;
 }
 .contact__modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
