@@ -30,23 +30,26 @@ Para desenvolver esta atividade será necessário:
 - [x] (!) Conteúdo de uma página só, links com âncora.
 - [x] (!) Tema do site: Portfólio pessoal (CV online).
 - [x] (!) Mínimo quatro links: PORTFOLIO, SOBRE MIM, FORMAÇÃO, CONTATO
-  - [ ] Colocar conteúdo, principalmente nos itens sobre você, formação acadêmica e até experiência profissional se você tiver.
+
+  - [x] Colocar conteúdo, principalmente nos itens sobre você, formação acadêmica e até experiência profissional se você tiver.
   - [x] SOBRE: que fale sobre você, hobbies etc;
     - [x] Foto
     - [x] Texto tl;dr
     - [x] Texto geral
-  - [/] Um link sobre sua formação educacional, idiomas;
-    - [ ] Formações: Timeline vertical
-    - [ ] Idiomas
-    - [ ] Skills
-    - [ ] Links?
+  - [x] Um link sobre sua formação educacional, idiomas;
+    - [x] Formações: Timeline vertical
+    - [x] Idiomas
+    - [x] Skills
   - [x] Um link com seu portfólio. Pode colocar links para outros sites que você tenha feito, ou com trabalhos que você tenha desenvolvido no curso em outras disciplinas. No decorrer da disciplina foram colocados exemplos de sites, você pode refazer esses exemplos e utilizar como portfólio.
     - [x] Grid auto-fit
     - [x] Imagens
     - [x] Transition
     - [x] Legendas
     - [x] Efeito pb, colorido no hover
-  - [ ] Link para contato – fazer a parte visual do formulário. (utilizar inputs: nome, email, mensagem).
+  - [x] Link para contato – fazer a parte visual do formulário. (utilizar inputs: nome, email, mensagem).
+    - [x] Info
+    - [ ] Formulário
+
 - [ ] (!) Explicar seu código através de comentários, sem exageros;
 
 ---
@@ -67,3 +70,4 @@ Para desenvolver esta atividade será necessário:
 - [ ] Tamanho máximo do conteúdo....easter egg se aumentar muito
 - [ ] Tamanho mínimo da tela: quando apertado...imagem minha comprime (eu me apertando...no final vira o hulk amarelo)
 - [ ] Doodles
+- [ ] Links LinkedIn, Dribble, Social, etc..
