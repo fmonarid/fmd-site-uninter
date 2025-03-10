@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fábio Monari- Portfólio Pessoal (CV online)</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="light">
+    <!-- Área fixa para info de apoio -->
+    <aside class="aside">
+      <div class="logo">
+        <h1 class="logo__main">[fmd]</h1>
+        <span class="logo__subtitle">design. dev. done.</span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#portfolio" class="nav__link">
+              <img
+                class="nav__link-icon"
+                aria-hidden="true"
+                src="assets/icon-picture.svg"
+              />
+              <span>portfólio</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link nav__link--active">
+              <img
+                class="nav__link-icon"
+                aria-hidden="true"
+                src="assets/icon-id-person.svg"
+              />
+              <span>sobre</span></a
+            >
+          </li>
+          <li class="nav__item nav__logo"><h1>[fmd]</h1></li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">
+              <img
+                class="nav__link-icon"
+                aria-hidden="true"
+                src="assets/icon-diploma.svg"
+              />
+              <span>formação</span></a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <img
+                class="nav__link-icon"
+                aria-hidden="true"
+                src="assets/icons-comment.svg"
+              />
+              <span>contato</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Área de conteúdo principal -->
+    <main class="main">
+      <section id="portfolio" class="portfolio">
+        <h2 class="u-title portfolio__title">Portfolio_</h2>
+        <div class="u-terminal-block">> run fmd portfolio --grid</div>
+        <a class="portfolio__item" href="https://onchip.com.br" target="_blank">
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/onchip-site-2019.png"
+            alt="Screenshot do site OnChip Eletrônica de 2019"
+          />
+          <span class="portfolio__item-text">OnChip Eletrônica - 2019</span>
+        </a>
+        <a
+          class="portfolio__item"
+          href="https://web.archive.org/web/20181223160016/http://www.getconnect.com.br/"
+          target="_blank"
+        >
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/getconnect-site-2017.png"
+            alt="Screenshot do site GetConnect de 2017"
+          />
+          <span class="portfolio__item-text">GetConnect - 2017</span>
+        </a>
+        <a
+          class="portfolio__item"
+          href="https://web.archive.org/web/20091221094542/http://www.assbb.org.br/"
+          target="_blank"
+        >
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/assbb-site-2006.jpg"
+            alt="Screenshot do site Associação Brasileira de Bartenders de 2006"
+          />
+          <span class="portfolio__item-text"
+            ><abbr title="Associação Brasileira de Bartenders">ABB</abbr> -
+            2006</span
+          >
+        </a>
+        <a class="portfolio__item">
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/aider-site-2010.jpg"
+            alt="Screenshot do site Aider Telecom de 2010"
+          />
+          <span class="portfolio__item-text">Aider Telecom - 2010</span>
+        </a>
+        <a
+          class="portfolio__item"
+          href="https://web.archive.org/web/20140516202612/http://d-geo.com.br/"
+          target="_blank"
+        >
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/dgeo-site-2011.png"
+            alt="Screenshot do site D-Geo de 2011"
+          />
+          <span class="portfolio__item-text">D-Geo - 2011</span>
+        </a>
+        <a class="portfolio__item" href="http://just.trd.br" target="_blank">
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/just-site-2013.png"
+            alt="Screenshot do site Just Traduções de 2013"
+          />
+          <span class="portfolio__item-text">Just Traduções - 2013</span>
+        </a>
+        <a
+          class="portfolio__item"
+          href="https://visiongestao.com.br"
+          target="_blank"
+        >
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/vision-site-2016.png"
+            alt="Screenshot do site Vision Gestão de 2016"
+          />
+          <span class="portfolio__item-text">Vision Gestão - 2016</span>
+        </a>
+        <a
+          class="portfolio__item"
+          href="https://web.archive.org/web/20101220040833/http://probohospitalar.com.br/"
+          target="_blank"
+        >
+          <img
+            class="portfolio__item-img"
+            src="assets/portfolio/probo-site-2009.png"
+            alt="Screenshot do site Probo Hospitalar de 2009"
+          />
+          <span class="portfolio__item-text">Probo Hospitalar - 2009</span>
+        </a>
+      </section>
+      <section id="about" class="about">
+        <h2 class="u-title about__title">Sobre_</h2>
+
+        <div class="u-terminal-block">> run fmd whoami --short</div>
+        <div class="about__profile-img">
+          <img src="assets/profile.jpg" alt="Imagem de perfil fmd" />
+        </div>
+        <ul>
+          <li><span>Quem:</span>Fábio Monari</li>
+          <li><span>O quê:</span>designer & desenvolvedor web</li>
+          <li><span>Quando:</span>desde 2005 e contando...</li>
+          <li><span>Onde:</span>São Paulo - SP, Brasil</li>
+          <li><span>Email:</span>*****@***********.***</li>
+          <li><span>Tel:</span>+55 (11) *****-*****</li>
+        </ul>
+        <p>
+          Olá, meu nome é <strong>Fábio</strong>,
+          <strong>desenvolvedor web</strong> desde 2005,
+          <strong>designer</strong> desde sempre. Já trabalhei como editor de
+          vídeo, desenvolvedor front-end, designer gráfico, designer web,
+          designer ux/ui, designer de produto e vários outros '<em>ers</em>',
+          '<em>ors</em>' e '<em>nds</em>' que ainda não inventaram um nome.
+          Movido a coca (cola!!!) e vivendo a vida no Go Horse, acredito que
+          menos é sempre mais, que nem tudo são apenas 0s e 1s, que todo excesso
+          esconde uma falta e que toda boa mudança é precedida pelo caos.
+          <strong>E então, quando começamos?</strong>
+        </p>
+      </section>
+      <section id="education" class="education">
+        <h2 class="u-title education-title">Formação_</h2>
+        <div class="u-terminal-block">> run fmd education --history</div>
+        <ul class="education__list">
+          <li class="education__item">
+            <span>Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
+            <span>Uninter (2021 - Cursando 😵‍💫)</span>
+          </li>
+          <li class="education__item">
+            <span>Formação em Design e Desenvolvimento Web</span>
+            <span>Microcamp (2024-2006)</span>
+          </li>
+          <li class="education__item">
+            <span>Técnico em Publicidade e Marketing</span>
+            <span>Escola Técnica São Judas Tadeu (2002-2004)</span>
+          </li>
+          <li class="education__item">
+            <span>Inglês: Fluente</span>
+          </li>
+          <li class="education__item">
+            <span>Diversos cursos de design e programação</span>
+            <span
+              >da Coursera, Udemy, Alura e freeCodeCamp...<br />(sim, aqueles
+              que adquirimos aos montes e só concluímos a metade!)</span
+            >
+          </li>
+          <li class="education__item education__item-section">
+            <span>Bacharelado em Publicidade e Propaganda</span>
+            <span
+              >Universidade São Judas Tadeu (2025-2008) [Incompleto 😖]</span
+            >
+          </li>
+          <li class="education__item">
+            <span>Formação em Design da Comunicação</span>
+            <span
+              >Escola Panamericana de Artes (2004-2006) [Incompleto 😵]</span
+            >
+          </li>
+          <li class="education__item">
+            <span>Técnico em Design Gráfico</span>
+            <span>Etec José Rocha Mendes (2003-2005) [Incompleto 😱]</span>
+          </li>
+        </ul>
+      </section>
+      <section id="contact" class="contact">
+        <h2 class="u-title contact-title">Contato_</h2>
+        <div class="u-terminal-block">> run fmd contact --form</div>
+        <div class="container">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+            <button type="submit">ENVIAR MENSAGEM</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <h3>SUCESSO!</h3>
+        <p>Mensagem enviada com sucesso!</p>
+        <button onclick="closeModal()">FECHAR</button>
+      </div>
+    </div> -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
