@@ -1,17 +1,18 @@
 /* Variáveis */
 :root {
-  --color-surface: hsl(0, 0%, 100%);
+  --color-surface: hsla(0, 0%, 100%, 1);
   --color-on-surface: hsla(0, 0%, 10%, 1);
   --color-on-surface-outline: hsla(0, 0%, 85%, 1);
   --color-surface-inverse: hsla(0, 0%, 10%, 1);
-  --color-on-surface-inverse: hsl(0, 0%, 100%);
+  --color-on-surface-inverse: hsla(0, 0%, 100%, 1);
   --color-on-surface-outline-inverse: hsla(0, 0%, 20%, 1);
   --color-on-surface-primary: hsla(56, 100%, 56%, 1);
-  --color-on-surface-primary-transparent: hsla(56, 100%, 56%, 0.7);
+  --color-on-surface-primary-transparent: hsla(56, 100%, 56%, 0.75);
   --color-on-surface-secondary: hsla(130, 100%, 50%, 1);
-  --color-on-surface-secondary-transparent: hsla(130, 100%, 50%, 0.7);
+  --color-on-surface-secondary-transparent: hsla(130, 100%, 50%, 0.75);
   --color-on-surface-tertiary: hsla(270, 100%, 50%, 1);
-  --color-on-surface-tertiary-transparent: hsla(270, 100%, 50%, 0.7);
+  --color-on-surface-tertiary-transparent: hsla(270, 100%, 50%, 0.75);
+  --color-backdrop: hsla(0, 0%, 10%, 0.75);
 
   --u-font-family-mono: "Roboto Mono", monospace;
   --u-spacer-sm: 2rem;
@@ -91,6 +92,23 @@ ul {
 ul span {
   font-weight: 500;
   margin-right: 0.4rem;
+}
+
+button {
+  width: fit-content;
+  background-color: var(--color-on-surface-primary);
+  color: var(--color-on-surface);
+  padding: 1.2rem 2.4rem;
+  border: none;
+  border-radius: var(--u-corner);
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-family: var(--u-font-family-mono);
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: var(--color-on-surface-secondary);
 }
 
 /* Classes universais */
@@ -346,35 +364,27 @@ ul span {
   resize: vertical;
 }
 .contact__form button {
-  width: fit-content;
   align-self: flex-end;
-  background-color: var(--color-on-surface-primary);
-  color: var(--color-on-surface);
-  padding: 1.2rem 2.4rem;
-  border: none;
-  border-radius: var(--u-corner);
-  cursor: pointer;
-  font-size: 1.6rem;
-  font-family: var(--u-font-family-mono);
-  font-weight: 500;
-  transition: background-color 0.3s;
-}
-.contact__form button:hover {
-  background-color: var(--color-on-surface-secondary);
 }
 .contact__modal {
-  display: none;
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-on-surface-outline);
+  background-color: var(--color-backdrop);
   z-index: 2000;
 }
 .contact__modal-content {
-  background-color: var(--color-surface);
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  min-width: var(--u-min-size);
+  max-width: 60rem;
+  gap: 1rem;
   padding: var(--u-spacer-md);
+  background-color: var(--color-surface);
   border-radius: var(--u-corner);
   position: absolute;
   top: 50%;
@@ -383,7 +393,10 @@ ul span {
   text-align: center;
 }
 .contact__modal-content h3 {
-  margin-bottom: 1.6rem;
-  color: var(--color-surface);
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
   font-weight: 700;
+}
+.contact__modal-content button {
+  margin-top: 2.4rem;
 }
